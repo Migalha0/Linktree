@@ -12,9 +12,9 @@ body {
   background-size: cover;
   */
   background-image: var(--bg-url);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: auto;
 }
 
 /* cores*/
@@ -63,6 +63,7 @@ body * {
 
 #profile img {
   width: 112px;
+  border-radius: 50%;
 }
 
 #profile p {
@@ -162,4 +163,13 @@ footer {
 .light #switch button {
   right: 0;
   left: initial;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./linktreeassets/fundo-grande.png);
+  }
+  .light {
+    --bg-url: url(./linktreeassets/bg-dark-grande.png);
+  }
 }
